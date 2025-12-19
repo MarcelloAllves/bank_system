@@ -1,4 +1,4 @@
-# 🚀 Fluxo Básico do Git e GitHub
+# Fluxo Básico do Git e GitHub
 
 ## 1. Criar e iniciar o repositório
 - `git init` → Cria um novo repositório Git na pasta atual.
