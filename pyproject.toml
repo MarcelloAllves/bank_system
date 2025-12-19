@@ -1,18 +1,22 @@
-[project]
+[tool.poetry]
 name = "projeto-bank-system"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "MarcelloAllves",email = "marcello.allves@hotmail.com"}
-]
+description = "Sistema bancário com POO e SQLAlchemy"
+authors = ["MarcelloAllves <marcello.allves@hotmail.com>"]
 readme = "README.md"
-requires-python = ">=3.10"
-dependencies = [
-    "black (>=25.12.0,<26.0.0)",
-    "isort (>=7.0.0,<8.0.0)",
-    "flake8 (>=7.3.0,<8.0.0)"
-]
+packages = [{ include = "banco", from = "src" }]
 
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+sqlalchemy = "^2.0"
+pandas = "^2.0"
+matplotlib = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.12.0"
+isort = "^7.0.0"
+flake8 = "^7.3.0"
+pytest = "^8.0.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
