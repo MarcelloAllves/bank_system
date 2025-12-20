@@ -13,5 +13,7 @@ id = gerar_id_conta()
 agora = _now()
 
 print(f"ID -> {id}, Agora é {agora.isoformat()}")
+
+
     
     

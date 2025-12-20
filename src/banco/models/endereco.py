@@ -30,7 +30,7 @@ class Endereco:
         cidade: str,
         estado: str,
         cep: str,
-        complemento: str,
+        complemento: str = "",
     ) -> None:
         # Criando validação para que campos necessários não sejam preenchidos
         # com valor nulo ou somente com espaços.
@@ -39,15 +39,21 @@ class Endereco:
             "numero": numero,
             "bairro": bairro,
             "cidade": cidade,
-            "estado": str,
-            "cep": str,
+            "estado": estado,
+            "cep": cep,
         }.items():
-            if not valor or valor.strip():
-                raise ValueError(f"O campo '{campo}' não pode ser vazio!")
+            if not valor or not valor.strip():
+                raise ValueError(f"O campo {campo} não pode ser vazio!")
         self.rua = rua.strip()
         self.numero = numero.strip()
         self.bairro = bairro.strip()
         self.cidade = cidade.strip()
         self.estado = estado.strip()
         self.cep = cep.strip()
-        self.complemento = complemento.strip()
+        self.complemento = complemento.strip() if complemento else ""
+
+    def __str__(self) -> str:
+        endereco = f"{self.rua}, {self.numero} - {self.bairro}, {self.cidade}/{self.estado}, CEP: {self.cep}"
+        if self.complemento:
+            endereco += f" ({self.complemento})"
+        return endereco
