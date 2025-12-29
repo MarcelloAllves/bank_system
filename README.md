@@ -1,4 +1,4 @@
-# Projeto Bank System
+# Projeto Bank System ( Em desenvolvimento )
 
 ## Descrição
 O **Projeto Bank System** é um sistema bancário desenvolvido em **Python** com foco em:
@@ -40,25 +40,31 @@ O objetivo é simular operações bancárias básicas, como criação de contas,
 ---
 
 ## Estrutura do projeto
+- O que já foi desenvolvido.
 ```bash
 src/
 └── banco/
     ├── models/
-    │   ├── banco.py          # Classe abstrata Banco
-    │   ├── banco_digital.py  # Classe concreta BancoDigital
-    │   ├── banco_fisico.py   # Classe concreta BancoFisico
-    │   ├── cliente.py        # Classe Cliente
-    │   ├── endereco.py       # Classe Endereco
-    │   ├── conta.py          # ContaCorrente, ContaPoupanca
-    │   └── transacao.py      # Transações (depósito, saque, transferência)
+    │   ├── banco.py          # Classe abstrata Banco (Já com códigos)
+    │   ├── banco_digital.py  # Classe concreta BancoDigital (Somente declaração da classe) 
+    │   ├── banco_fisico.py   # Classe concreta BancoFisico (Somente declaração da classe)
+    │   ├── cliente.py        # Classe Cliente(Já com códigos)
+    │   ├── endereco.py       # Classe Endereco(Já com códigos)
+    │   ├── conta.py          # ContaCorrente, ContaPoupanca (Em desenvolvimento)
+    │   └── transacao.py      # Transações (depósito, saque, transferência) (Somente declaração da classe)
 └── services/
 └── utils/
 └── tests/
+```
+
+---
 
 ## Como executar
-- **Clone o repositório:
-git clone https://github.com/MarcelloAllves/Projeto_bank_system.git
-cd Projeto_bank_system
+1. Clone o repositório:
+   
+   git clone https://github.com/MarcelloAllves/bank_system.git
+   cd bank_system
+
 
 ## Instalação das dependências com Poetry:
 poetry install
@@ -70,7 +76,7 @@ poetry run pytest
 from banco.models.cliente import Cliente
 from banco.models.conta import ContaCorrente
 
-cliente = Cliente(nome="João Silva", cpf="12345678900")
+cliente = Cliente(nome="Maria Silva", cpf="12345678900")
 conta = ContaCorrente(numero="0001", cliente=cliente)
 
 conta.depositar(500)
@@ -78,9 +84,9 @@ conta.sacar(200)
 print(conta.saldo)  # 300
 
 ## Atualizações Futuras:
-Implementação de persistências untilizando a biblioteca SQLAlchemy
-Gerar relatórios com utilizando as bibliotecas Pandas e Matplotlib
-Testes de integração para validação entre os módulos, detectar falhas que testes unitários possam não detectar e pra tentar garantir que o fluxo de informações siga o esperado baseando-se em cenários reais de usabilidade dos usuários.
+- Implementação de persistências untilizando a biblioteca SQLAlchemy
+- Gerar relatórios com utilizando as bibliotecas Pandas e Matplotlib
+- Testes de integração para validação entre os módulos, com a finalidade de prever falhas que testes unitários possam não detectar e tentar garantir que o fluxo de informações siga o esperado baseando-se em cenários reais de usabilidade dos usuários.
 
 ## Autor:
 Marcelo Alves
