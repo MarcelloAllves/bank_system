@@ -1,0 +1,8 @@
+Prepare uma versão refatorada e padronizada dessa documentação, 
+já no estilo usado em projetos Python:
+•Enxuta e padronizada (PEP 257 + PEP 484).
+•Didática (explica conceitos e exceções).
+•Prática (inclui exemplo de implementação).
+e depois prepare também uma versão em formato de docstring dentro 
+da própria classe/métodos, para que fique pronta para ser usada
+diretamente no código.

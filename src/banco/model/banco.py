@@ -5,9 +5,9 @@ import random
 from typing import Dict, Optional, Any
 
 
-from banco.models.cliente import Cliente
-from banco.models.conta import Conta
-from banco.models.transacao import Transacao
+from banco.model.cliente import Cliente
+from banco.model.conta import Conta
+from banco.model.transacao import Transacao
 
 nome: str
 clientes: Dict[str, Cliente]
