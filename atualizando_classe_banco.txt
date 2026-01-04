@@ -1,0 +1,1 @@
+Removendo variáveis globais, e decarando as dentro do construtos.
