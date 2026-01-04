@@ -69,7 +69,7 @@ class Cliente:
             raise ValueError("O nome do cliente não pode ser vazio!")
         if not cpf or not cpf.strip():
             raise ValueError("O campo CPF do cliente não pode ser vazio!")
-        if not cpf.isdigit() or len(cpf) != 11: 
+        if not cpf.isdigit() or len(cpf) != 11:
             raise ValueError("CPF deve conter 11 dígitos numéricos.")
 
         self.cliente_id = self._generate_id(cpf)

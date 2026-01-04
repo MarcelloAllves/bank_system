@@ -1,5 +1,0 @@
-Prepare uma versão refatorada e padronizada dessa documentação, 
-já no estilo usado em projetos Python:
-•Enxuta e padronizada (PEP 257 + PEP 484).
-•Didática (explica conceitos e exceções).
-•Prática (inclui exemplo de implementação).

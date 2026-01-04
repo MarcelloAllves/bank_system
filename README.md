@@ -44,12 +44,12 @@ O objetivo é simular operações bancárias básicas, como criação de contas,
 src/
 └── banco/
     ├── models/
-    │   ├── banco.py          # Classe abstrata Banco
-    │   ├── banco_digital.py  # Classe concreta BancoDigital
-    │   ├── banco_fisico.py   # Classe concreta BancoFisico
+    │   ├── banco.py          # Classe abstrata 
+    │   ├── conta_corrente.py  # Classe concreta 
+    │   ├── conta_poupanca.py   # Classe concreta
     │   ├── cliente.py        # Classe Cliente
     │   ├── endereco.py       # Classe Endereco
-    │   ├── conta.py          # ContaCorrente, ContaPoupanca
+    │   ├── conta.py          # Classe abstrata
     │   └── transacao.py      # Transações (depósito, saque, transferência)
 └── services/
 └── utils/
@@ -78,9 +78,9 @@ conta.sacar(200)
 print(conta.saldo)  # 300
 
 ## Atualizações Futuras:
-Implementação de persistências untilizando a biblioteca SQLAlchemy
-Gerar relatórios com utilizando as bibliotecas Pandas e Matplotlib
-Testes de integração para validação entre os módulos, detectar falhas que testes unitários possam não detectar e pra tentar garantir que o fluxo de informações siga o esperado baseando-se em cenários reais de usabilidade dos usuários.
+Implementação de persistências utilizando a biblioteca SQLAlchemy.
+Gerar relatórios com utilizando as bibliotecas Pandas e Matplotlib.
+Testes de integração para validação entre os módulos, identificar falhas que testes unitários possam não detectar e tentar garantir que o fluxo de informações siga o esperado baseando-se em cenários reais de usabilidade dos usuários.
 
 ## Autor:
 Marcelo Alves

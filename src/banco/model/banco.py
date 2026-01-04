@@ -142,7 +142,7 @@ class Banco(ABC):
 
         tipo: str = "resumo" → parâmetro opcional que define o tipo de relatório.
             Se não for informado, assume "resumo" como padrão.
-            Poderia haver outros tipos, como "detalhado", "financeiro", "clientes", etc.
+            Fututamente haverão outros tipos, como "detalhado", "financeiro", "clientes", etc.
         -> dict → indica que o método deve retornar um dicionário (estrutura chave-valor),
         com os dados do relatório.
 
